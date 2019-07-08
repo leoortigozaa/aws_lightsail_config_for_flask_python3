@@ -197,7 +197,7 @@ $ sudo service apache2 reload
 ```
 
 ## Test your flask app
-Enter in your navigator with *YOUR_PUBLIC_IP_ADDRESS* (Mine is 54.160.19.10) to test if apache works fine. If something works bad, logged as user you can check the apache error.log file:
+Enter in your navigator with *YOUR_PUBLIC_IP_ADDRESS.xip.io* (Mine is 54.160.19.10.xip.io) to test if apache works fine. If something works bad, logged as user you can check the apache error.log file:
 ```sh
 sudo tail -f /var/log/apache2/error.log 
 ```
