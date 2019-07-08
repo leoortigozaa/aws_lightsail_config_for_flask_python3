@@ -19,7 +19,8 @@ Choose file to save the key: /c/Users/<YOUR_WINDOWS_USERNAME>/.ssh/my_key
 - In Networking (aws panel) set another rule in firewall:
 -- Application = Custom
 -- Protocol = TCP
--- Port = 2200 
+-- Port = 2200
+
 Thanks to CharInt: 
 https://askubuntu.com/questions/1019891/connecting-to-amazon-lightsail-ubuntu-server-using-different-ssh-port)
 - Login in aws ssh console and type the following:
