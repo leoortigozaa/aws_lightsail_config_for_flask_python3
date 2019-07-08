@@ -48,7 +48,7 @@ $ sudo chmod 644 .ssh/authorized_keys
 $ sudo service ssh restart
 $ sudo nano /etc/ssh/sshd_config
 ```
-- Change Port to 2200
+- Change *Port* to *2200*
 - CTRL+O (save), ENTER (confirm), CTRL+X (exit nano)
 ```sh
 $ sudo service sshd restart
@@ -66,6 +66,14 @@ Logged as grader:
 $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
+
+## Disable root login
+Logged as grader:
+ ```sh
+$ sudo vim /etc/ssh/sshd_config
+```
+- Change *PermitRootLogin* to *no*
+- CTRL+O (save), ENTER (confirm), CTRL+X (exit nano)
 
 ## Configure FIREWALL
 Logged as grader:
