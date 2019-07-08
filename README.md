@@ -43,8 +43,19 @@ $ sudo nano .ssh/authorized_keys
 - CTRL+O (save), ENTER (confirm), CTRL+X (exit nano)
 - Again, in aws console:
 ```sh
-$ sudo chmod  700 .ssh
-$ sudo chmod 644 .ssh/authorized_keys
+$ sudo chown -R  grader.grader /home/grader/.ssh
+$ sudo chmod  700 /home/grader/.ssh
+$ sudo chmod 600 /home/grader/.ssh/authorized_keys
+$ ls -als .ssh/
+```
+Must print:
+```
+4 drwx------ 2 grader grader 
+4 drwxr-xr-x 4 grader grader 
+4 -rw------- 1 grader grader 
+```
+Now, let's restart ssh and change its port to 2200:
+```sh
 $ sudo service ssh restart
 $ sudo nano /etc/ssh/sshd_config
 ```
