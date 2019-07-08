@@ -154,8 +154,9 @@ $ sudo nano /etc/apache2/sites-available/FlaskApp.conf
 Copy and past the following configurations:
 ```sh
 <VirtualHost *:80>
-	ServerName 52.24.125.52
-	ServerAdmin qiaowei8993@gmail.com
+        ServerName 54.160.19.10
+        ServerAdmin leandrocl2005@yahoo.com
+        ServerAlias 54.160.19.10.xip.io
 	WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
 	<Directory /var/www/FlaskApp/FlaskApp/>
 		Order allow,deny
