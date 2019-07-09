@@ -1,5 +1,5 @@
 # Deploy of a flask app with postgres in aws lightsail
-This project is a requisite of Udacity full stack nano degree. 
+This project is a requirement of Udacity fullstack nano degree. 
 
 # Step by Step Guide
 
